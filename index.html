@@ -127,6 +127,11 @@
             <p>Producto 2</p>
         </div>
         
+        <div class="producto" onclick="abrirModal('blow_up')">
+            <img src="imagenes/producto3_imagen_principal.png" alt="blow up">
+            <p>blow up</p>
+        </div>        
+
         <!-- Agregar más productos aquí -->
     </div>
 
@@ -161,8 +166,18 @@
                     "ruta_de_imagen2_variante2.jpg",
                     "ruta_de_imagen2_variante3.jpg"
                 ]
+            },
+            blow_up: {
+                title: "blow up",
+                imagenPrincipal: "imagenes/producto3_imagen_principal.png",
+                variantes: [
+                    "imagenes/producto3_imagen1.png",
+                    "imagenes/producto3_imagen2.png",
+                    "imagenes/producto3_imagen3.png"
+                ]
             }
         };
+        
 
         function abrirModal(productoId) {
             const producto = productos[productoId];
